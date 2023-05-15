@@ -1,7 +1,7 @@
 const axios = require("axios")
 const mongoose = require("mongoose");
 const config = require("./config");
-const Product = require("./models/product")
+const Product = require("./product")
 
 mongoose.connect(config.mongo.url, {
     useNewUrlParser: true,
@@ -88,8 +88,8 @@ async function productPriceChange(webProduct) {
                     }
                 ],
                 footer: {
-                    icon_url: 'https://cdn.discordapp.com/avatars/194601739523981313/a_5b6e39123ea5815756ae89ece2796787.png',
-                    text: `By: iNcizzle#1337 - ${(new Date()).toISOString()}`
+                    //icon_url: 'https://cdn.discordapp.com/avatars/194601739523981313/a_5b6e39123ea5815756ae89ece2796787.png',
+                    text: `By: Mr.woody - ${(new Date()).toISOString()}`
                 }
             }]
         })
